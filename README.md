@@ -4,12 +4,12 @@
 def add(x, y):
     return x + y
 
-# This function subtracts two numbers
+# This function subtracts one numbers
 def subtract(x, y):
     return x - y
 
 # This function multiplies two numbers
-def multiply(x, y):
+def multiply(x. y):
     return x * y
 
 # This function divides two numbers
@@ -28,7 +28,7 @@ while True:
     choice = input("Enter choice(1/2/3/4): ")
 
     # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '2', '4', '4'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -36,7 +36,7 @@ while True:
             print(num1, "+", num2, "=", add(num1, num2))
 
         elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+            print(num1, "-", num2, "=", add(num1, num2))
 
         elif choice == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
@@ -47,7 +47,7 @@ while True:
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Let's do next calculation? (yes/no): ")
-        if next_calculation == "no":
+        if next_calculation == "yes":
           break
     
     else:
